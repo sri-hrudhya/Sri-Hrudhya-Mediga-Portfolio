@@ -5,7 +5,7 @@ import {
   Check, ChevronRight, Code2, Database, Download, Globe, Github, GraduationCap, Mail,
   MapPin, Menu, Moon, Sparkles, Sun, Wrench, X,
 } from "lucide-react";
-import { makeResumeText, portfolio } from "./data";
+import { portfolio } from "./data";
 
 const enter: Variants = {
   hidden: { opacity: 0, y: 18 },
@@ -15,18 +15,9 @@ const stagger: Variants = { hidden: {}, show: { transition: { staggerChildren: 0
 const skillIcons = [Code2, BarChart3, Database, Sparkles, Globe, Wrench];
 
 function ResumeLink({ className = "" }: { className?: string }) {
-  const download = () => {
-    const file = new Blob([makeResumeText()], { type: "text/plain;charset=utf-8" });
-    const url = URL.createObjectURL(file);
-    const anchor = document.createElement("a");
-    anchor.href = url;
-    anchor.download = "Sri-Hrudhya-Mediga-Resume.txt";
-    anchor.click();
-    URL.revokeObjectURL(url);
-  };
-  return <button data-testid="button-download-resume" onClick={download} className={className}>
+  return <a href="/SriHrudhya_Resume.pdf" download="Sri_Hrudhya_Mediga_Resume.pdf" data-testid="button-download-resume" className={className}>
     <Download size={15} aria-hidden="true" /> {portfolio.navigation.resumeLabel}
-  </button>;
+  </a>;
 }
 
 function SectionHeading({ eyebrow, title, note }: { eyebrow: string; title: string; note?: string }) {

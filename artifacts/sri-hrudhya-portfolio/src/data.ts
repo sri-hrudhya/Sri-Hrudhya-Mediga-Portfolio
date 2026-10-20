@@ -189,34 +189,3 @@ export const portfolio = {
     { value: "1st", label: "Prize" },
   ],
 };
-
-export function makeResumeText() {
-  return [
-    portfolio.name,
-    "Aspiring Data Scientist / AI-ML Engineer",
-    portfolio.email,
-    portfolio.github,
-    portfolio.location,
-    "",
-    "PROFILE",
-    portfolio.about,
-    "",
-    "EDUCATION",
-    ...portfolio.education.map((item) => `${item.school} — ${item.program} | ${item.years} | ${item.result}`),
-    "",
-    "SKILLS",
-    ...portfolio.skills.map((group) => `${group.group}: ${group.items.join(", ")}`),
-    "",
-    "EXPERIENCE",
-    `${portfolio.experience.title} — ${portfolio.experience.organization}`,
-    portfolio.experience.project,
-    ...portfolio.experience.bullets.map((bullet) => `• ${bullet}`),
-    "",
-    "PROJECTS",
-    ...portfolio.projects.map((project) => `${project.name} — ${project.title}\n${project.description}\n${project.highlight}\nStack: ${project.stack.join(", ")}`),
-    "",
-    "LEADERSHIP & ACTIVITIES",
-    ...portfolio.leadership,
-    `Interests: ${portfolio.activities.join(", ")}`,
-  ].join("\n");
-}
