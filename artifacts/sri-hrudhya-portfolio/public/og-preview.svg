@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="wash" x1="112" y1="63" x2="1070" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6FAFB"/>
+      <stop offset="1" stop-color="#EAF4F7"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="780" y1="138" x2="1074" y2="475" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#39A5C5"/>
+      <stop offset="1" stop-color="#16799F"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" stroke="#1A85B0" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#wash)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="42" y="42" width="1116" height="546" rx="26" stroke="#1A85B0" stroke-opacity=".19" stroke-width="2"/>
+  <rect x="80" y="80" width="54" height="54" rx="15" fill="#1A85B0"/>
+  <text x="107" y="114" fill="white" font-family="Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">SHM</text>
+  <text x="158" y="113" fill="#29343A" font-family="Arial, sans-serif" font-size="20" font-weight="600">Sri Hrudhya Mediga</text>
+  <text x="82" y="270" fill="#202A30" font-family="Arial, sans-serif" font-size="67" font-weight="700" letter-spacing="-2">Turning data</text>
+  <text x="82" y="349" fill="#202A30" font-family="Arial, sans-serif" font-size="67" font-weight="700" letter-spacing="-2">into <tspan fill="#1A85B0">decisions.</tspan></text>
+  <text x="86" y="405" fill="#5E6D75" font-family="Arial, sans-serif" font-size="24">Data Science · Applied AI · GenAI</text>
+  <rect x="82" y="462" width="262" height="3" rx="1.5" fill="#1A85B0"/>
+  <text x="82" y="507" fill="#42535B" font-family="Arial, sans-serif" font-size="18">Explainable ML, analytics, and AI products</text>
+  <circle cx="922" cy="311" r="180" fill="url(#teal)"/>
+  <circle cx="922" cy="311" r="198" stroke="#1A85B0" stroke-opacity=".22" stroke-width="2"/>
+  <circle cx="922" cy="311" r="164" stroke="white" stroke-opacity=".45" stroke-dasharray="5 8"/>
+  <text x="922" y="338" fill="white" font-family="Arial, sans-serif" font-size="91" font-weight="700" letter-spacing="-4" text-anchor="middle">SHM</text>
+  <text x="922" y="381" fill="white" fill-opacity=".86" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="4" text-anchor="middle">DATA · PEOPLE · POSSIBILITY</text>
+</svg>

@@ -1,0 +1,41 @@
+Build a modern, single-page personal portfolio website for Sri Hrudhya Mediga, an aspiring Data Scientist / AI-ML Engineer. The goal is to impress recruiters and hiring managers for data science, AI/ML, and GenAI roles within about 30 seconds of scrolling.
+
+TECH & QUALITY
+- React + Vite + Tailwind CSS (deployable to Vercel), smooth scroll navigation, Framer Motion for subtle animations
+- Fully responsive (mobile first), light/dark mode toggle, accessible, fast loading
+- Clean, minimal, professional design. Palette: deep teal/blue (#1a85b0-ish) with white and charcoal. Modern sans-serif font (Inter or Poppins). No clutter, no stock-template feel.
+
+SECTIONS (in order)
+1. Navbar: Home, About, Skills, Experience, Projects, Leadership, Contact, plus a "Download Resume" button
+2. Hero: "Sri Hrudhya Mediga", rotating tagline (Data Scientist | AI/ML Engineer | GenAI Builder), a one-line pitch, buttons for "View Projects" and "Contact Me", plus GitHub and email icons. Leave a spot for my profile photo.
+3. About: Short, confident paragraph based on this summary: "Aspiring Data Scientist / AI-ML Engineer with hands-on experience across the data science and applied AI lifecycle, from building explainable ML models to deploying full-stack analytics platforms and Generative AI / RAG-based applications. Comfortable working end-to-end: data cleaning, exploratory analysis, model building, and shipping usable products." Include quick facts: B.Tech CSE (Data Science), GNITS Hyderabad, 2023-2027, CGPA 8.49/10, based in Hyderabad. Mention photography and writing as personal interests.
+4. Skills: grouped cards with icons
+   - Languages: Python, SQL, Java, C
+   - Data & Visualization: Excel, Power BI, Pandas, NumPy, Matplotlib, Recharts
+   - Databases: MySQL, PostgreSQL, ChromaDB, Data Warehousing, Data Mining
+   - AI/ML: ML, XGBoost, Scikit-learn, SHAP, LLMs, Generative AI, Prompt Engineering, RAG, LangChain, Agentic AI
+   - Web & Backend: React.js, FastAPI, Node.js, Tailwind CSS
+   - Tools: Git, GitHub, VS Code, Jupyter, Google Colab
+5. Experience (timeline): AI/ML Engineer Intern at Truviq Systems, project TruHire (AI-Powered Recruitment & Resume Matching System). Stack: React, FastAPI, Supabase Auth, Gemini API, NLP. Bullets:
+   - Built a full-stack recruitment app that matches resumes to job requirements using NLP and semantic similarity scoring
+   - Implemented resume ingestion, candidate search, match-score filtering, candidate profiles with resume previews, and automated role-specific recruitment emails
+   - Integrated backend APIs, database management, and caching to improve retrieval efficiency and performance
+6. Projects: card grid with tech-stack tags, short description, key highlight, and GitHub / Live Demo buttons (placeholders where links are missing). Clicking a card opens a detail modal.
+   - DataLens: AI-Powered Business Analytics Dashboard (solo). React/Vite on Vercel, FastAPI on Render, PostgreSQL, JWT auth. Auto-detects dataset column types and generates interactive dashboards; uses Gemini to write executive summaries. Has Live Demo + GitHub. Make this the featured project.
+   - PolicyAssist: RAG Agent for Loan & Insurance Policy Explanation (solo). FastAPI, ChromaDB vector search, cross-encoder reranking, Gemini/Claude LLMs, React + Vite + Tailwind. Answers questions like "am I covered for X?" or "what's the penalty for early repayment?" from policy PDFs.
+   - PrediX: AI-Based Prediabetes Risk Prediction (team of 4, mentor Mrs. Ch. Veena). Predicts Type 2 Diabetes progression for Indian youth (15-25). XGBoost + SHAP, engineered Metabolic and Lifestyle Risk Scores, R² 0.91, MAE 0.11 years. Streamlit + React/TypeScript. Badge: "1st Prize, Best Mini Project".
+   - VisionAI: AI-Driven Self-Calibrating Vision Screening (team of 4, mentor Mrs. Bhagyashree). Remote myopia screening using MediaPipe facial landmarks for distance and posture estimation; optotypes scale dynamically with user distance; voice interaction for accessibility. Python, OpenCV, MediaPipe, React.js, Node.js.
+   - TruHire: link back to the internship entry.
+   - Optional "Coming soon" card for a Power BI financial statements dashboard.
+7. Education: GNITS B.Tech CSE-Data Science 2023-2027 (CGPA 8.49); Narayana Junior College 2023 (92%); SVM Central Public School 2021 (CBSE, 72%)
+8. Leadership & Activities: Class Representative; Coordinator, Philanto (Photography Club of GNITS); Member, Nrityastra (Dance Club of GNITS). Interests: Dance, Singing, Writing, Volleyball, Photography.
+9. Contact: simple contact form (name, email, message), email srihrudhyamediga@gmail.com, GitHub github.com/hru-med, location Hyderabad, India. Footer with copyright.
+
+EXTRAS
+- Animated stat counters (e.g., 4+ projects, 1 internship, 1st Prize, 8.49 CGPA)
+- Subtle scroll-reveal animations, hover effects on cards
+- SEO meta tags, Open Graph preview, favicon with my initials "SHM"
+- Keep all content in one data file (e.g., data.js) so I can edit it easily
+- Add a README with deployment steps for Vercel
+
+Write real, polished copy rather than lorem ipsum. Keep the tone professional but personable, and use strong action verbs.

@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Sri Hrudhya Mediga — Portfolio"
+description = "A recruiter-focused personal portfolio showcasing Sri Hrudhya Mediga’s work across data science, applied AI, and GenAI. Features project details, skills, experience, education, contact links, and responsive light/dark themes."
+version = "1.0.0"
+id = "artifacts/sri-hrudhya-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20382
+
+[services.development]
+run = "pnpm --filter @workspace/sri-hrudhya-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sri-hrudhya-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/sri-hrudhya-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20382"
+BASE_PATH = "/"
